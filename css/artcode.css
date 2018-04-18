@@ -1,0 +1,786 @@
+body {
+  font-family: 'letoSans'; }
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-advantage1 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage2 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -69px -198px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage3 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -69px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage4 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -138px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage5 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -207px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage6 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px -198px;
+  width: 69px;
+  height: 80px; }
+
+.icon-burger {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -138px -230px;
+  width: 33px;
+  height: 29px; }
+
+.icon-email, .footer-address :nth-child(2):before {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -186px;
+  width: 15px;
+  height: 12px; }
+
+.icon-fb {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -171px -198px;
+  width: 33px;
+  height: 32px; }
+
+.icon-location, .footer-address :nth-child(1):before {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -152px;
+  width: 13px;
+  height: 19px; }
+
+.icon-logo-white {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 298px;
+  height: 59px; }
+
+.icon-logo {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px -59px;
+  width: 297px;
+  height: 59px; }
+
+.icon-ok {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -236px -198px;
+  width: 32px;
+  height: 31px; }
+
+.icon-phone_blue {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -118px;
+  width: 20px;
+  height: 17px; }
+
+.icon-phone_white, .contacts_white .contacts__tel:before, .call-back__name, .call-back__email {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -135px;
+  width: 20px;
+  height: 17px; }
+
+.icon-skype, .footer-address :nth-child(3):before {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -171px;
+  width: 15px;
+  height: 15px; }
+
+.icon-tw {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -204px -198px;
+  width: 32px;
+  height: 32px; }
+
+.icon-vk {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -138px -198px;
+  width: 33px;
+  height: 32px; }
+
+@font-face {
+  font-family: 'letoSans';
+  src: url("../../fonts/leto-sans.woff2") format("woff2"), url("../../fonts/leto-sans.woff") format("woff"), url("../../fonts/leto-sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'letoSansBold';
+  src: url("../../fonts/leto-sans-bold.woff2") format("woff2"), url("../../fonts/leto-sans-bold.woff") format("woff"), url("../../fonts/leto-sans-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'letoSansThin';
+  src: url("../../fonts/leto-sans-thin.woff2") format("woff2"), url("../../fonts/leto-sans-thin.woff") format("woff"), url("../../fonts/leto-sans-thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'glyphicons';
+  src: url("../../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../../fonts/glyphicons-halflings-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.contacts__tel {
+  color: #1d3b77;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 22px 0 14px 0; }
+  .contacts__tel:before {
+    display: inline-block;
+    margin-right: 10px;
+    content: '';
+    width: 20px;
+    height: 17px;
+    background: url("../images/phone_blue.png") 0 0 no-repeat; }
+
+.contacts__tel_footer {
+  margin-top: -5px;
+  margin-bottom: 0; }
+
+.contacts__tel__basis {
+  font-weight: bold; }
+
+.contacts__call {
+  font-family: 'letoSansBold';
+  color: #1d3b77;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #1d3b77;
+  padding: 2px 27px; }
+
+.contacts_white .contacts__tel, .contacts_white .contacts__call {
+  color: #fff; }
+.contacts_white .contacts__tel {
+  line-height: normal; }
+.contacts_white .contacts__call {
+  border-color: #fff; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-info__logo {
+    margin-top: 10px; }
+
+  .contacts__tel {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 9px; }
+    .contacts__tel:before {
+      background-size: 14px;
+      width: 14px;
+      height: 14px; }
+
+  .contacts__tel_footer {
+    margin-top: 0; }
+
+  .contacts__call {
+    font-size: 10px;
+    line-height: 26px;
+    padding: 2px 20px; } }
+@media only screen and (max-width: 767px) {
+  .contacts__tel_footer {
+    margin-bottom: 15px; } }
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    width: 940px;
+    margin: 0 auto; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    padding-left: 25px;
+    padding-right: 25px; } }
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding-left: 25px;
+    padding-right: 25px; } }
+.popup {
+  display: none;
+  box-sizing: border-box;
+  background: #1d3b77;
+  position: absolute;
+  width: 380px;
+  padding: 10px 20px 20px 20px;
+  top: 10%;
+  left: calc(50% - 160px);
+  z-index: 10; }
+
+.popup__inner {
+  max-width: 340px;
+  margin: 0 auto; }
+
+.popup__close-btn {
+  display: inline-block; }
+
+@media only screen and (max-width: 767px) {
+  .popup {
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0; } }
+.head-menu-wrap {
+  background: #1f3b7a; }
+
+.head-menu__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.head-menu__link {
+  font-size: 16px;
+  line-height: 43px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 30px; }
+  .head-menu__link:hover {
+    color: #447fcb; }
+
+.head-menu_burger-btn {
+  cursor: pointer;
+  display: inline-block; }
+
+#popup__inner .head-menu__list {
+  display: block;
+  text-align: center; }
+
+@media only screen and (max-width: 767px) {
+  .head-menu-wrap {
+    padding: 5px 0; }
+
+  .head-menu-wrap .head-menu__list {
+    display: none; }
+
+  .head-menu_burger-btn {
+    margin: 0 5px; } }
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-advantage1 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage2 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -69px -198px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage3 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -69px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage4 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -138px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage5 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -207px -118px;
+  width: 69px;
+  height: 80px; }
+
+.icon-advantage6 {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px -198px;
+  width: 69px;
+  height: 80px; }
+
+.icon-burger {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -138px -230px;
+  width: 33px;
+  height: 29px; }
+
+.icon-email, .footer-address :nth-child(2):before {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -186px;
+  width: 15px;
+  height: 12px; }
+
+.icon-fb {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -171px -198px;
+  width: 33px;
+  height: 32px; }
+
+.icon-location, .footer-address :nth-child(1):before {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -152px;
+  width: 13px;
+  height: 19px; }
+
+.icon-logo-white {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 298px;
+  height: 59px; }
+
+.icon-logo {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: 0px -59px;
+  width: 297px;
+  height: 59px; }
+
+.icon-ok {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -236px -198px;
+  width: 32px;
+  height: 31px; }
+
+.icon-phone_blue {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -118px;
+  width: 20px;
+  height: 17px; }
+
+.icon-phone_white, .contacts_white .contacts__tel:before, .call-back__name, .call-back__email {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -135px;
+  width: 20px;
+  height: 17px; }
+
+.icon-skype, .footer-address :nth-child(3):before {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -276px -171px;
+  width: 15px;
+  height: 15px; }
+
+.icon-tw {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -204px -198px;
+  width: 32px;
+  height: 32px; }
+
+.icon-vk {
+  background-image: url(../../public/images/spritesheet.png);
+  background-position: -138px -198px;
+  width: 33px;
+  height: 32px; }
+
+@font-face {
+  font-family: 'letoSans';
+  src: url("../../fonts/leto-sans.woff2") format("woff2"), url("../../fonts/leto-sans.woff") format("woff"), url("../../fonts/leto-sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'letoSansBold';
+  src: url("../../fonts/leto-sans-bold.woff2") format("woff2"), url("../../fonts/leto-sans-bold.woff") format("woff"), url("../../fonts/leto-sans-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'letoSansThin';
+  src: url("../../fonts/leto-sans-thin.woff2") format("woff2"), url("../../fonts/leto-sans-thin.woff") format("woff"), url("../../fonts/leto-sans-thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'glyphicons';
+  src: url("../../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../../fonts/glyphicons-halflings-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.call-back {
+  display: none; }
+
+.call-back__input {
+  background: #fff;
+  display: inline;
+  width: 280px;
+  height: 18px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 12px; }
+
+.call-back__name {
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px; }
+
+.call-back__email {
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px; }
+
+.call-back__send {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+  border: 1px solid #fff;
+  width: 280px;
+  margin-left: 30px; }
+
+.call-back__title {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  margin-left: 30px; }
+
+.popup__close-btn {
+  display: inline-block;
+  color: #fff;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; }
+
+.header-info {
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between; }
+
+.header-info__logo {
+  margin-top: 30px; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-info {
+    padding-bottom: 16px; }
+
+  .header-info__logo {
+    margin-top: 24px; }
+
+  .icon-logo {
+    background-size: 230px;
+    background-position: 0 -45px;
+    width: 230px;
+    height: 45px; } }
+@media only screen and (max-width: 767px) {
+  .header-info {
+    display: block;
+    text-align: center; }
+
+  .header-info__logo {
+    margin-left: auto;
+    margin-right: auto; }
+
+  .contacts__tel {
+    margin-left: auto;
+    margin-right: auto; } }
+.advantages {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+
+.advantages__item {
+  width: 33.3%;
+  text-align: center; }
+
+.advantages__icon {
+  margin: 0 auto; }
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  font-weight: normal;
+  margin: 20px 0 0 0; }
+
+.advantages__text {
+  font-size: 12px;
+  line-height: 22px;
+  color: #8f8f8f;
+  margin-top: 0; }
+
+@media only screen and (max-width: 767px) {
+  .advantages__item {
+    width: 50%; }
+
+  .advantages__title {
+    font-size: 14px;
+    line-height: 16px; } }
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 57px;
+  overflow: hidden; }
+
+.partners__item {
+  margin: 0 18px; }
+  .partners__item:first-child {
+    margin-left: 0; }
+  .partners__item:last-child {
+    margin-right: 0; }
+
+.about {
+  background: url("../images/about.png") center top no-repeat;
+  height: 320px;
+  padding-top: 8px;
+  margin: 50px 0 40px 0; }
+
+.about_text {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff; }
+
+.about_title {
+  margin: 10px 0 18px 0; }
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.articles__item {
+  width: 24%; }
+
+.articles__date {
+  display: inline-block;
+  background: #1f3b7a;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 10px; }
+
+.articles__img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: 100px;
+  margin-bottom: 20px; }
+
+.articles__text {
+  color: #6a6a6a;
+  font-family: 'Myriad Pro';
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #c9c9c9; }
+
+.articles__link {
+  margin: 24px 0 0 auto; }
+
+@media only screen and (max-width: 767px) {
+  .articles__item {
+    width: 100%;
+    margin-bottom: 10px; }
+    .articles__item:nth-last-child(2) {
+      margin-bottom: 0; }
+
+  .articles__img {
+    width: auto; } }
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+
+.reviews__item {
+  width: 46%;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #c9c9c9; }
+
+.reviews__date {
+  font-family: 'letoSansBold'; }
+
+.reviews__text {
+  margin-top: 8px; }
+
+.reviews__name {
+  font-size: 18px;
+  line-height: 24px;
+  color: #1f3b7a;
+  margin-bottom: 6px; }
+
+.reviews__site {
+  margin-left: 118px;
+  font-size: 15px; }
+
+.reviews__avatar {
+  float: left;
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 15px;
+  margin-bottom: 15px; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .reviews__site {
+    margin-left: 0; } }
+@media only screen and (max-width: 767px) {
+  .reviews__site {
+    margin-left: 0; } }
+.footer {
+  min-height: 141px; }
+
+.footer-top {
+  background: url(../../public/images/footer1.png) 0 0 repeat; }
+
+.footer-wrap {
+  padding: 20px 0; }
+
+.footer__logo {
+  float: left; }
+
+.footer-address {
+  max-width: 360px;
+  list-style: none;
+  margin: 0 0 0 335px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 32px; }
+  .footer-address :nth-child(1):before {
+    content: ''; }
+  .footer-address :nth-child(2):before {
+    content: ''; }
+  .footer-address :nth-child(3):before {
+    content: ''; }
+
+.footer-address__item {
+  line-height: 27px;
+  padding-left: 24px;
+  position: relative; }
+  .footer-address__item:before {
+    position: absolute;
+    top: 7px;
+    left: 0; }
+
+.footer-contacts {
+  float: right; }
+
+.footer-copyright {
+  background: url(../../public/images/footer2.png) 0 0 repeat;
+  height: 20px;
+  color: #6a6f74;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-wrap {
+    padding: 20px 24px; }
+
+  .footer__logo {
+    background-size: 228px;
+    width: 230px;
+    height: 43px;
+    margin-top: 15px; }
+
+  .footer-address {
+    margin-left: 7px; }
+
+  .footer-address__item {
+    font-size: 10px;
+    padding-left: 23px; } }
+@media only screen and (max-width: 767px) {
+  .footer-wrap {
+    padding: 20px 24px;
+    display: block; }
+
+  .footer__logo {
+    display: none; }
+
+  .footer-address {
+    width: 260px;
+    margin: 0 auto;
+    float: none; }
+
+  .footer-address__item {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 8px; }
+    .footer-address__item:before {
+      top: -2px; }
+    .footer-address__item:nth-child(2):before {
+      top: 0; }
+
+  .footer-contacts {
+    float: none;
+    text-align: center;
+    margin-bottom: 25px; } }
+.about-us {
+  display: flex;
+  flex-wrap: wrap; }
+
+.about-us__title {
+  width: 100%; }
+
+.about-us__text {
+  max-width: 700px;
+  margin-left: 14px; }
+
+.chief-name {
+  width: 100%;
+  height: 58px;
+  background: #efefef;
+  padding-right: 40px;
+  box-sizing: border-box; }
+
+.chief-name__name-group {
+  float: right;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 11px; }
+  .chief-name__name-group:before {
+    content: ' ';
+    display: block;
+    width: 2px;
+    height: 29px;
+    position: absolute;
+    background: #1d3b77;
+    top: 13px;
+    left: 0px; }
+
+.chief-name__name {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'letoSansBold';
+  color: #1d3b77; }
+
+.chief-name__post {
+  font-size: 10px;
+  line-height: 10px;
+  color: #8f8f8f;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=artcode.css.map */
